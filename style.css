@@ -1,3 +1,9 @@
+.bg {
+  background-image: url('bg.jpeg'); 
+  background-size: cover; 
+  opacity: 0.85
+}
+
 .profile {
   border-radius:60px;
 }
