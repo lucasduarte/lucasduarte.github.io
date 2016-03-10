@@ -21,7 +21,7 @@
                 <span class="header-item">
                   <a class="button is-success is-inverted" href="https://github.com/lucasduarte" target="_blank">
                     <i class="fa fa-github"></i>
-                    My Github
+                    Github Profile
                   </a>
                 </span>
               </div>
@@ -84,7 +84,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a onclick="changeClass('contact-modal')">
                     <span class="icon">
                       <i class="fa fa-envelope-o " ></i>
                     </span>
@@ -96,5 +96,44 @@
           </nav>
         </div>
       </section>
+      <div class="modal" id="contact-modal" onclick="changeClass('contact-modal');">
+        <div class="modal-background"></div>
+        <div class="modal-container">
+            <div class="modal-content">        
+                <div class="box">
+                    <div class="columns">
+                        <div class="column is-text-centered">
+                            <h1 class="title "><i class="fa fa-map-marker"></i> Address</h1>
+                            <p>Vitória - ES</p>
+                        </div>
+                        <div class="column is-text-centered">
+                            <h1 class="title"><i class="fa fa-mobile"></i> Phones</h1>
+                            <p>
+                                (27) 98143-4024<br>
+                                (31) 98733-1821                              
+                            </p>
+
+                        </div>
+                        <div class="column is-text-centered">
+                            <h1 class="title"><i class="fa fa-envelope-o"></i> Mail</h1>
+                            <p>lucasduarte599@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close" onclick="changeClass('contact-modal'); event.stopPropagation();"></button>
+       </div>
+       <script type="text/javascript">
+            function changeClass(element)
+            {
+                if ( document.getElementById(element).className.match(/(?:^|\s)is-active(?!\S)/) )
+                {
+                    document.getElementById(element).className = document.getElementById(element).className.replace(' is-active', '');
+                } else {
+                    document.getElementById(element).className += ' is-active';
+                }
+            }
+        </script>
     </body>
 </html>
