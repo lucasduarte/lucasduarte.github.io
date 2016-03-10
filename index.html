@@ -61,11 +61,19 @@
             <div class="container">
               <ul>
                 <li>
-                  <a href="#">
+                  <a onclick="changeClass('work-experience-modal')">
                     <span class="icon">
-                      <i class="fa fa-user-secret"></i>
+                      <i class="fa fa-briefcase"></i>
                     </span>
-                    About Me
+                    Work Experience
+                  </a>
+                </li>
+                <li>
+                  <a onclick="changeClass('skills-modal')">
+                    <span class="icon">
+                      <i class="fa fa-code-fork"></i>
+                    </span>
+                    Skills
                   </a>
                 </li>
                 <li>
@@ -97,6 +105,60 @@
           </nav>
         </div>
       </section>
+      
+      <div class="modal" id="work-experience-modal" onclick="changeClass('work-experience-modal');">
+        <div class="modal-background"></div>
+        <div class="modal-container">
+            <div class="modal-content">        
+                <div class="box">
+                    <div class="columns">
+                        <div class="column is-text-centered">
+                            <h1 class="title "><i class="fa fa-map-marker"></i> Address</h1>
+                            <p>Vitória - ES</p>
+                        </div>
+                        <div class="column is-text-centered">
+                            <h1 class="title"><i class="fa fa-mobile"></i> Phones</h1>
+                            <p>
+                                (27) 98143-4024<br>
+                                (31) 98733-1821                              
+                            </p>
+
+                        </div>
+                        <div class="column is-text-centered">
+                            <h1 class="title"><i class="fa fa-envelope-o"></i> Mail</h1>
+                            <p>lucasduarte599@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close" onclick="changeClass('work-experience-modal'); event.stopPropagation();"></button>
+      </div>
+      
+      <div class="modal" id="skills-modal" onclick="changeClass('skills-modal');">
+        <div class="modal-background"></div>
+        <div class="modal-container">
+            <div class="modal-content">        
+                <div class="box">
+                    <div class="columns">
+                        <div class="column is-text-centered">
+                            <h1 class="title ">Programming</h1>
+                            <div class="meter emerald">
+                              <span style="width: 75%">
+                                <span>Ruby</span>
+                              </span>
+                            </div>
+                        </div>
+                        <div class="column is-text-centered">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close" onclick="changeClass('skills-modal'); event.stopPropagation();"></button>
+      </div>
+      
       <div class="modal" id="contact-modal" onclick="changeClass('contact-modal');">
         <div class="modal-background"></div>
         <div class="modal-container">
