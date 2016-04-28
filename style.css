@@ -1,3 +1,7 @@
+.email:before {
+  content: '\006C\0075\0063\0061\0073\0064\0075\0061\0072\0074\0065\0035\0039\0039\0040\0067\006D\0061\0069\006C\002E\0063\006F\006D';
+}
+
 .page-bg {
   background-image: url('bg.jpeg'); 
   background-size: cover; 
@@ -167,3 +171,5 @@ body { -ms-overflow-style: none; }
     transform: translate3d(4px, 0, 0);
   }
 }
+
+
